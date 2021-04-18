@@ -1,0 +1,49 @@
+Here is a little API coding project I put together. The app should pull "content deliverable" records from the Content Deliverables 
+table with certain criteria listed below. I just need you to create a basic web page using HTML (no CSS needed) that contains an H1 
+with the Client name that is pulled from the Quick Base API (see documentation here).   https://developer.quickbase.com/operation/runQuery
+
+--------------------------------------------------------
+Realm Hostname	= emsearchconsulting.quickbase.com
+
+Table ID	= brdqbafdp
+
+App ID	= dqdx7nvxe69y868c3b6d27dyun
+
+User Token	= b4bq6v_mq3e_0_cy4nht5c99yx27czj67bmcud86iy
+---------------------------------------------------------
+
+Instructions:
+
+Using jQuery, pull “Content Deliverable” records with the following parameters or “filters”. Note: “fid:x” is the ‘field id’ number in the database:
+
+
+`Field name` (fid:n) = value
+
+`Related Content Deliverable Allocation` (fid:22)	= 582
+
+`Stage` (fid:6)	= “Sent to client for approval”
+
+
+
+
+
+HTML table should appear with these columns:
+
+
+`Publish Date` (fid:8)
+
+`Topic` (fid:37)
+
+`Assigned to (default)` (fid:33)
+
+`Content URL (google docs)` (fid:7) (use this as href in anchor tag wrapped around Title value)
+
+`Content Deliverable Allocation - Product - Client Name` (fid:23)
+
+
+The page should look something like this:
+
+Client Name
+
+[[[Table with columns/rows mentioned in the instructions above]]]
+
